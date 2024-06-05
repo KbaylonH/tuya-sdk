@@ -85,6 +85,13 @@ class Client {
         return json_decode($body);
     }
 
+    public function refreshToken($refreshToken)
+    {
+        $endpoint = '/v1.0/token/'.$refreshToken;
+        $response = $this->sendRequest('GET', $endpoint);
+        return $response->result;
+    }
+
     public function getClientSecret(){
         return $this->clientSecret;
     }
