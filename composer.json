@@ -1,0 +1,22 @@
+{
+    "name": "kevinwbh/tuyasdk",
+    "description": "SDK for Tuya Cloud Services",
+    "type": "library",
+    "require": {
+        "php": "^7.1",
+        "guzzlehttp/guzzle": "^6"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Kevinwbh\\TuyaSdk\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Kevin William Baylón Huerta",
+            "email": "kbaylonh@outlook.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
