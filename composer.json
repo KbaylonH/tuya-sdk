@@ -3,8 +3,8 @@
     "description": "SDK for Tuya Cloud Services",
     "type": "library",
     "require": {
-        "php": "^7.1",
-        "guzzlehttp/guzzle": "^6"
+        "php": "^7.2|^8.0|^8.1",
+        "guzzlehttp/guzzle": "^7"
     },
     "license": "MIT",
     "autoload": {
