@@ -89,7 +89,7 @@ class Client {
     {
         $endpoint = '/v1.0/token/'.$refreshToken;
         $response = $this->sendRequest('GET', $endpoint);
-        return $response->result;
+        return $response;
     }
 
     public function getClientSecret(){
