@@ -109,6 +109,15 @@ class PasswordApi
         ]);
     }
 
+    public function syncPassword($password_id = ''){
+
+        $body = [
+            'password_id' => $password_id
+        ];
+
+        return $this->client->sendRequest('POST', '/v1.0/devices/'.$this->device_id.'/door-lock/issue-password', $body);
+    }
+
     public function setDeviceId($device_id)
     {
         $this->device_id = $device_id;
